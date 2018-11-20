@@ -30,7 +30,7 @@ DESTDIR=%{buildroot} ./install64.sh
 %doc
 
 %post
-systemctl reload systemd-binfmt.service
+systemctl restart systemd-binfmt.service
 
 %changelog
 
