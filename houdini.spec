@@ -26,11 +26,11 @@ DESTDIR=%{buildroot} ./install64.sh
 /usr/lib/houdini/ld.so
 /usr/libexec/houdini
 /usr/libexec/houdini64
-/etc/binfmt.d/houdini.conf
-
+/etc/binfmt.d/houdini.conf 
 %doc
 
-
+%post
+systemctl reload systemd-binfmt.service
 
 %changelog
 
