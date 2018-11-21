@@ -40,7 +40,6 @@ source ./patch.sh
 
 patch_strings_in_file arm64_x64/houdini64 "/system/lib64/arm64/cpuinfo" "/usr/lib/houdini/cpu64"
 patch_strings_in_file arm64_x64/houdini64 "/system/lib64/arm64/linker64" "/lib/ld-linux-aarch64.so.1"
-patch_strings_in_file arm64_x64/houdini64 "/system/lib64/arm64/linker64" ""
 patch_strings_in_file arm64_x64/houdini64 "/system/lib64/arm64/libaeabi_map.so" ""
 # Ouch!
 patch_strings_in_file arm64_x64/houdini64 "armv8" "aarch64"
