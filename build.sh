@@ -41,9 +41,7 @@ source ./patch.sh
 patch_strings_in_file arm64_x64/houdini64 "/system/lib64/arm64/cpuinfo" "/usr/lib/houdini/cpu64"
 patch_strings_in_file arm64_x64/houdini64 "/system/lib64/arm64/linker64" "/lib/ld-linux-aarch64.so.1"
 patch_strings_in_file arm64_x64/houdini64 "/system/lib64/arm64/libaeabi_map.so" ""
-# Ouch! Currently not patched too because aarch64 is longer than armv8
-
-patch_strings_in_file arm64_x64/houdini64 "armv8" "aarch64"
+patch_strings_in_file_1p arm64_x64/houdini64 "armv8" "aarch64"
 
 patch_strings_in_file armv7_x64/houdini "/system/lib/arm/cpuinfo" "/usr/lib/houdini/cpu32"
 patch_strings_in_file armv7_x64/houdini "/system/lib/arm/linker" "/usr/lib/houdini/ld.so"
