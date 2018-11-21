@@ -17,19 +17,19 @@ mkdir armv7_x86
 
 # Uncompress & copy
 
-unsquashfs houdini-7_z.sfs
+unsquashfs houdini-6_z.sfs
 cp squashfs-root/houdini64 arm64_x64/
 cp squashfs-root/cpuinfo arm64_x64/
 cp squashfs-root/linker64 arm64_x64/
 rm -rf squashfs-root
 
-unsquashfs houdini-7_y.sfs
+unsquashfs houdini-6_y.sfs
 cp squashfs-root/houdini armv7_x64/
 cp squashfs-root/cpuinfo armv7_x64/
 cp squashfs-root/linker armv7_x64/
 rm -rf squashfs-root
 
-unsquashfs houdini-7_x.sfs
+unsquashfs houdini-6_x.sfs
 cp squashfs-root/houdini armv7_x86/
 cp squashfs-root/cpuinfo armv7_x86/
 cp squashfs-root/linker armv7_x86/
