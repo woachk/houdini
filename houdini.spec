@@ -1,5 +1,5 @@
 Name: houdini		
-Version:	6
+Version:	7
 Release:	1%{?dist}
 Summary:	Intel ARM-on-x86 Just-In-Time Compiler	
 BuildArch: x86_64
@@ -7,7 +7,7 @@ BuildArch: x86_64
 License:	Intel
 
 BuildRequires:  squashfs-tools	
-Source0: houdini-6.tar
+Source0: houdini-7.tar
 %description
 
 Intel ARM/ARM64-on-x64 dynamic binary translator.
